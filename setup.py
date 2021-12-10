@@ -26,7 +26,7 @@ class BuildExt(build_ext):
     """
     c_opts = {
         'msvc': ['/EHsc', '/openmp', '/O2', '/D "NDEBUG"'],
-        'unix': ['-march=native', '-std=c++14', '-Ofast', '-DNDEBUG', '-fopenmp'],
+        'unix': ['-std=c++14', '-Ofast', '-DNDEBUG', '-fopenmp'],
     }
     link_opts = {
         'unix': ['-fopenmp', '-pthread'],
